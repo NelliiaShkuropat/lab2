@@ -43,24 +43,6 @@ def generator(table):
     input('Генерация произведена. Нажмите Enter')
 
 
-# def book_tag(table):
-#     tags = set()
-#     tags_file = open('file_tags', 'w')
-#     for line in table:
-#         tag_count = line[12].count('#')
-#         index_tag = line[12].find('#')
-#         if tag_count > 1:
-#             for tag in range(0, tag_count-1):
-#                 next_tag = line[12].find('#', index_tag+1)
-#                 tags.add(line[12][index_tag:next_tag])
-#                 index_tag = next_tag
-#         tags.add(line[12][index_tag:])
-#     for item in tags:
-#         tags_file.write(f'{item}\n')
-#     tags_file.close()
-#     input('Генерация произведена. Нажмите Enter')
-
-
 def book_tag(table):
     tags = set()
     for line in table:
